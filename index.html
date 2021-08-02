@@ -6,40 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>The Bike Shop</title>
 </head>
 <body>  
-    <div class="main-container">
-        <div class="top-slider">
-            <div class="top-slider__image">
-                <img class="slider-img"src="./img/Slider_Photo01.png" alt="slider">
+         <div class="slider">
+            <div class="slider__item">
+                <img src="./img/Slider_Photo01.png" alt="slider1">
             </div>
+            <!-- <div class="slider__item">
+                <img src="./img/slider_photo2.jpg" alt="slider2">
+            </div>
+            <div class="slider__item">
+                <img src="./img/slider_photo3.jpg" alt="slider3">
+            </div> -->
         </div>
-            <header class="header wrapper">
-                    <div class="logo">
-                        <a href="#" class="logo__link"><img src="./img/THE BIKE SHOP LOGI.png" alt="logo"></a>
+    <div class="main-screen">
+        <header class="header wrapper">
+            <nav class="nav">  
+                <a href="#" class="nav__logo"><img src="./img/THE BIKE SHOP LOGI.png" alt="logo"></a>
+                <div class="nav__menu" id="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">BICYCLES</li>
+                        <li class="nav__item">PARTS</li>
+                        <li class="nav__item">ACCESSORIES</li>
+                        <li class="nav__item">EXTRAS</li>
+                        <li class="nav__item"><img src="./img/Basket_icon.png" alt="basket-icon"></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav__toggle">
+                    <div class="nav__toggle__burger"></div>
                     </div>
-                    <nav class="menu">
-                        <button class="menu-btn"></button>
-                    </nav>              
-            </header> 
-        <div class="main-block">        
-            <div class="top-slider__title">
+            </nav>             
+        </header> 
+        <div class="main-screen__text">        
+            <div class="main-screen__title">
                 <h1>HANDMADE BICYCLE</h1>
             </div>
-            <div class="top-slider__text">
+            <div class="main-screen__subtext">
                 <h6>You <span>create</span> the <spanp>journey</span>, we supply the <span>parts</span>. </h6>
             </div>
-            <div class="top-slider__button">
+            <div class="main-screen__button">
                 <button class="slider-button"></button>
-            </div>
-            <div class="top-slider__icon"><img class="scroll-icon" src="./img/SCROLL_ICON.png" alt=""></div>
+            </div>            
         </div>
+        <div class="main-screen__icon"><img class="scroll-icon" src="./img/SCROLL_ICON.png" alt=""></div>
     </div>
-        
 
 
 
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
