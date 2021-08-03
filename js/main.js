@@ -1,7 +1,7 @@
 /*==================== CLOSE BUTTON ====================*/
 
-const menuBtn = document.querySelector('.nav__toggle');
-const closeBtn = document.querySelector('.nav__toggle__burger');
+const menuBtn = document.querySelector('.header__toggle');
+const closeBtn = document.querySelector('.header__toggle__burger');
 menuBtn.addEventListener('click', () => {
     if(!closeBtn.classList.contains('open')) {
         closeBtn.classList.add('open'); 
