@@ -80,4 +80,218 @@
   border-radius: 10px;
   background-color: #000000;
 }
+
+.header {
+  height: 20px;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 10px;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 20px;
+      flex-basis: 20px;
+}
+
+.header .nav__logo {
+  margin-left: 15px;
+}
+
+.header .nav__logo img {
+  width: 50px;
+}
+
+.header .nav__menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  background-color: black;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header .nav .show-menu {
+  top: 0;
+}
+
+.header .nav__list {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav__item {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.header .nav__toggle {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border-radius: 3px;
+  background-color: #fcff19;
+  margin-right: 15px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .nav__toggle__burger {
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 1px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+}
+
+.header .nav__toggle__burger::before, .header .nav__toggle__burger::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  border-radius: 1px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+}
+
+.header .nav__toggle__burger::before {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.header .nav__toggle__burger::after {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.header .nav__toggle__burger.open {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header .nav__toggle__burger.open::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .nav__toggle__burger.open::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 992px) {
+  .main-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .main-screen .header {
+    height: 30px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10px;
+  }
+  .main-screen .header__logo {
+    margin-left: 40px;
+  }
+  .main-screen .header__logo img {
+    width: 100px;
+  }
+  .main-screen .header__menu {
+    position: static;
+    top: 0;
+    height: auto;
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin: 0;
+    background-color: inherit;
+    padding-top: 0;
+  }
+  .main-screen .header__list {
+    height: inherit;
+    margin-right: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-screen .header__list__item {
+    margin: 0 15px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+  }
+  .main-screen .header__toggle {
+    display: none;
+  }
+}
 /*# sourceMappingURL=vars.css.map */
