@@ -208,7 +208,6 @@ body {
                     }
                 }
             }
-
             &__icon {
                 img {
                     width: 33px;
@@ -216,12 +215,7 @@ body {
                 }
             }
     }
-    
-
 }
-
-
-
 
 //DESKTOP//
 
@@ -273,6 +267,7 @@ body {
                     color: #ffffff;
                     font-weight: 700;
                     font-family: "Roboto";
+                    text-decoration: none;
                 }        
             } 
             
@@ -310,8 +305,7 @@ body {
                     }
                 }
 
-                &__button {
-                    
+                &__button {  
 
                     button {
                         width: 123px;

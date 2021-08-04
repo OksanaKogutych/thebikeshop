@@ -278,6 +278,7 @@ body {
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto";
+    text-decoration: none;
   }
   .header__toggle {
     display: none;
