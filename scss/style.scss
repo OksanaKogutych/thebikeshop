@@ -171,18 +171,19 @@ body {
         }
     }
     &__main-screen {
-        
-        height: 100%;      
+        position: relative;
+        min-height: 100vh;      
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
        
             &__text {
+                
                 color:  #fff;        
                 font-family: "Roboto";
                 text-align: center;
-                flex: 1;
+                
                 
 
                 &__title {
@@ -221,6 +222,8 @@ body {
                 }
             }
             &__icon {
+                position: absolute;
+                bottom: 0;
                 img {
                     width: 33px;
                     height: 38.5px;

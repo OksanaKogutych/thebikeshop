@@ -185,7 +185,8 @@ body {
 }
 
 .banner__main-screen {
-  height: 100%;
+  position: relative;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,9 +206,6 @@ body {
   color: #fff;
   font-family: "Roboto";
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .banner__main-screen__text__title {
@@ -240,6 +238,11 @@ body {
   font-weight: 700;
   font-family: "Roboto";
   text-align: center;
+}
+
+.banner__main-screen__icon {
+  position: absolute;
+  bottom: 0;
 }
 
 .banner__main-screen__icon img {

@@ -1,3 +1,14 @@
+/*==================== SLIDER ====================*/
+
+
+
+var slider = tns({
+    container: '.banner__slider',
+    items: 3,
+    slideBy: 'page',
+    autoplay: true
+  });
+
 /*==================== CLOSE BUTTON ====================*/
 
 const menuBtn = document.querySelector('.header__toggle');
@@ -27,7 +38,8 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav__toggle','nav__menu');
 
-// $(document).ready(function(){
-//     $('.slider').slick();
 
-// });
+
+
+
+  
