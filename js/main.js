@@ -4,9 +4,11 @@
 
 var slider = tns({
     container: '.banner__slider',
-    items: 3,
+    items: 1,
+    controlsContainer: "#customize-controls",
     slideBy: 'page',
-    autoplay: true
+    autoplay: true,
+    autoplayButton: false,
   });
 
 /*==================== CLOSE BUTTON ====================*/

@@ -162,6 +162,49 @@ body {
   min-height: 100vh;
 }
 
+.banner .prev {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  height: 59px;
+  width: 59px;
+  background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.banner .prev:focus {
+  outline: none;
+}
+
+.banner .prev:hover {
+  cursor: pointer;
+  background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+  -webkit-transform: inherit;
+          transform: inherit;
+}
+
+.banner .next {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  height: 59px;
+  width: 59px;
+  right: 0;
+  background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+}
+
+.banner .next:focus {
+  outline: none;
+}
+
+.banner .next:hover {
+  cursor: pointer;
+  background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .banner__slider {
   position: absolute;
   top: 0;
