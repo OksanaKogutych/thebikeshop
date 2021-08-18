@@ -162,49 +162,6 @@ body {
   min-height: 100vh;
 }
 
-.banner .prev {
-  position: absolute;
-  z-index: 50;
-  top: 50%;
-  height: 59px;
-  width: 59px;
-  background-image: url(/img/RIGHT_BUTTON_LINK.svg);
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
-.banner .prev:focus {
-  outline: none;
-}
-
-.banner .prev:hover {
-  cursor: pointer;
-  background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
-  -webkit-transform: inherit;
-          transform: inherit;
-}
-
-.banner .next {
-  position: absolute;
-  z-index: 50;
-  top: 50%;
-  height: 59px;
-  width: 59px;
-  right: 0;
-  background-image: url(/img/RIGHT_BUTTON_LINK.svg);
-}
-
-.banner .next:focus {
-  outline: none;
-}
-
-.banner .next:hover {
-  cursor: pointer;
-  background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 .banner__slider {
   position: absolute;
   top: 0;
@@ -286,6 +243,7 @@ body {
 .banner__main-screen__icon {
   position: absolute;
   bottom: 0;
+  margin-bottom: 10px;
 }
 
 .banner__main-screen__icon img {
@@ -345,6 +303,68 @@ body {
   }
   .header__toggle {
     display: none;
+  }
+  .banner .prev {
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    height: 59px;
+    width: 59px;
+    background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    margin: 15px;
+  }
+  .banner .prev:focus {
+    outline: none;
+  }
+  .banner .prev:hover {
+    cursor: pointer;
+    background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
+  .banner .next {
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    height: 59px;
+    width: 59px;
+    right: 0;
+    background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+    margin: 15px;
+  }
+  .banner .next:focus {
+    outline: none;
+  }
+  .banner .next:hover {
+    cursor: pointer;
+    background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .banner .paginations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    list-style: none;
+  }
+  .banner .paginations .tns-nav-active {
+    background-color: #fcff19;
+  }
+  .banner .paginations li {
+    height: 5px;
+    width: 100%;
+    background-color: #aba8a6;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .banner .paginations li:hover {
+    cursor: pointer;
   }
   .banner__main-screen__text {
     color: #fff;

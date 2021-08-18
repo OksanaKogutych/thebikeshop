@@ -150,49 +150,8 @@ body {
     position: relative;
     min-height: 100vh;
 
-    .prev {
-        position: absolute;        
-        z-index: 50;
-        top: 50%;
-        height: 59px;
-        width: 59px;
-        background-image: url(/img/RIGHT_BUTTON_LINK.svg);
-        transform: rotate(-180deg);
-        
-            &:focus {
-                outline: none;
-            }
-
-            &:hover {
-                cursor: pointer;
-                background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
-                transform: inherit;
-            }   
-    }
-    .next {
-        position: absolute;        
-        z-index: 50;
-        top: 50%;
-        height: 59px;
-        width: 59px;
-        right: 0;
-        background-image: url(/img/RIGHT_BUTTON_LINK.svg);
-        
-            &:focus {
-                outline: none;
-            }
-
-            &:hover {
-                cursor: pointer;
-                background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
-                transform: rotate(180deg);
-            }
-    }
-
-        
-
-
-
+    
+     
     &__slider {
         position: absolute;
         top: 0;
@@ -270,6 +229,7 @@ body {
             &__icon {
                 position: absolute;
                 bottom: 0;
+                margin-bottom: 10px;
                 img {
                     width: 33px;
                     height: 38.5px;
@@ -339,6 +299,70 @@ body {
     }
 
     .banner {
+        .prev {
+            position: absolute;        
+            z-index: 50;
+            top: 50%;
+            height: 59px;
+            width: 59px;
+            background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+            transform: rotate(-180deg);
+            margin: 15px;
+            
+                &:focus {
+                    outline: none;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+                    background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+                    transform: inherit;
+                }   
+        }
+        .next {
+            position: absolute;        
+            z-index: 50;
+            top: 50%;
+            height: 59px;
+            width: 59px;
+            right: 0;
+            background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+            margin: 15px;
+            
+                &:focus {
+                    outline: none;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+                    background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+                    transform: rotate(180deg);
+                }
+        }
+    
+        .paginations {
+            display: flex;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            list-style: none;
+    
+            .tns-nav-active {
+                background-color: #fcff19;
+            }
+    
+            li {
+                height: 5px;
+                width: 100%;
+                background-color: #aba8a6;
+                transition: 0.5s;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
         &__main-screen {
             &__text {
                 color:  #fff;        

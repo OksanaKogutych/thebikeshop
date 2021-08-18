@@ -6,9 +6,10 @@ var slider = tns({
     container: '.banner__slider',
     items: 1,
     controlsContainer: "#customize-controls",
-    slideBy: 'page',
-    autoplay: true,
-    autoplayButton: false,
+    slideBy: 1,
+    nav: true,    
+    navContainer: "#customize-paginations",
+    
   });
 
 /*==================== CLOSE BUTTON ====================*/
