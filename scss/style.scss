@@ -305,7 +305,7 @@ body {
             top: 50%;
             height: 59px;
             width: 59px;
-            background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+            background-image: url(../img/RIGHT_BUTTON_LINK.svg);
             transform: rotate(-180deg);
             margin: 15px;
             
@@ -315,7 +315,7 @@ body {
     
                 &:hover {
                     cursor: pointer;
-                    background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+                    background-image: url(../img/LEFT_BUTTON_ACTIVE.svg);
                     transform: inherit;
                 }   
         }
@@ -326,7 +326,7 @@ body {
             height: 59px;
             width: 59px;
             right: 0;
-            background-image: url(/img/RIGHT_BUTTON_LINK.svg);
+            background-image: url(../img/RIGHT_BUTTON_LINK.svg);
             margin: 15px;
             
                 &:focus {
@@ -335,7 +335,7 @@ body {
     
                 &:hover {
                     cursor: pointer;
-                    background-image: url(/img/LEFT_BUTTON_ACTIVE.svg);
+                    background-image: url(../img/LEFT_BUTTON_ACTIVE.svg);
                     transform: rotate(180deg);
                 }
         }
