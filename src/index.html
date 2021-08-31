@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/reset.scss"> 
+    <link rel="stylesheet" href="./styles/styles.scss">
     <!-- <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <title>The Bike Shop</title>
 </head>
 <body>  
     <header class="header wrapper">            
-        <a href="#" class="header__logo" title="Bike Shop Logo"><img src="./img/THE BIKE SHOP LOGI.png" alt="logo"></a>
+        <a href="#" class="header__logo" title="Bike Shop Logo"><img src="./images/the_bike_shop_logo.png" alt="logo"></a>
         <nav class="header__menu" id="nav__menu">
             <ul class="header__list">
-                <li class="header__list__item">BICYCLES
-                    
+                <li class="header__list__item">
+                    <a href="#" >BICYCLES</a>
+                    <ul class="header__list__dropdown">
+                        <li class="header__list__item"><a href="#">Link 1</a></li>
+                        <li class="header__list__item"><a href="#">Link 2</a></li>
+                        <li class="header__list__item"><a href="#">Link 3</a></li>
+                    </ul>
                 </li>
-                <li class="header__list__item">PARTS</li>
-                <li class="header__list__item">ACCESSORIES</li>
-                <li class="header__list__item">EXTRAS</li>
-                <li class="header__list__item"><img src="./img/Basket_icon.png" alt="basket-icon"></li>
+                <li class="header__list__item"><a href="#">PARTS</a></li>
+                <li class="header__list__item"><a href="#">ACCESSORIES</a></li>
+                <li class="header__list__item"><a href="#">EXTRAS</a></li>
+                <li><a href="#"><img src="./images/basket_icon.png" alt="basket-icon"></a></li>
             </ul>
         </nav>
         <div class="header__toggle" id="nav__toggle">
@@ -44,13 +49,13 @@
           </ul>
          <div class="banner__slider">
             <div class="banner__slider__item">
-                <img src="./img/Slider_Photo01.png" alt="slider1">
+                <img src="./images/slider_photo01.png" alt="slider1">
             </div>
             <div class="banner__slider__item">
-                <img src="./img/slider_photo2.jpg" alt="slider2">
+                <img src="./images/slider_photo02.jpg" alt="slider2">
             </div>
             <div class="banner__slider__item">
-                <img src="./img/slider_photo3.jpg" alt="slider3">
+                <img src="./images/slider_photo03.jpg" alt="slider3">
             </div> 
         </div>
         <div class="banner__main-screen">        
@@ -59,21 +64,16 @@
                     <h1>HANDMADE BICYCLE</h1>
                 </div>
                 <div class="banner__main-screen__text__subtext">
-                    <h6>You <span>create</span> the <spanp>journey</span>, we supply the <span>parts.</span></h6>
+                    <h6>You <span>create</span> the <span>journey</span>, we supply the <span>parts.</span></h6>
                 </div>
                 <div class="banner__main-screen__text__button">
                     <button class="slider-button">SHOP BIKES</button>
                 </div>            
             </div>
-            <div class="banner__main-screen__icon"><img class="scroll-icon" src="./img/SCROLL_ICON.png" alt="scroll-icon"></div>
+            <div class="banner__main-screen__icon"><img class="scroll-icon" src="./images/scroll_icon.png" alt="scroll-icon"></div>
         </div>
-        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique atque ducimus optio autem corporis error maiores sequi rerum exercitationem nulla, culpa dolores mollitia inventore, repudiandae perspiciatis temporibus neque reprehenderit dolor.</p> -->
-
     </div>
-
-<script type="module" src="./js/main.js"></script>
 <script src="./js/tiny-slider.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-
+<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

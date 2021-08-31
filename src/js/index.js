@@ -1,6 +1,9 @@
+import '../styles/styles.scss'
+
+
 /*==================== SLIDER ====================*/
 
-
+import { tns } from "../../node_modules/tiny-slider/src/tiny-slider"
 
 var slider = tns({
     container: '.banner__slider',
