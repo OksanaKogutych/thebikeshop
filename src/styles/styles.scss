@@ -88,9 +88,8 @@ body {
     }
 
     &__dropdown {
-        display: none;
+      display: none;
     }
-
   }
 
   &__toggle {
@@ -352,17 +351,15 @@ body {
           font-weight: 700;
           font-family: "Roboto";
           text-decoration: none;
-
-          &:hover {
-            color: black;
-          }
         }
 
         &:hover {
-          color: #000000;
-
           background-color: #fcff19;
           border-radius: 5px;
+
+          > a {
+            color: black;
+          }
 
           > .header__list__dropdown {
             display: block;
@@ -381,7 +378,12 @@ body {
         width: 220px;
         height: 156px;
         text-align: left;
-        color: black;
+        
+        a {
+          color: black;
+          font-weight: 700;
+          font-family: "Roboto";
+        }
       }
     }
 
