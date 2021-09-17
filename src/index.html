@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/reset.scss"> 
-    <link rel="stylesheet" href="./styles/styles.scss">
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/normalize.scss">  -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.scss">
     <!-- <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <title>The Bike Shop</title>
 </head>
 <body>  
-    <header class="header wrapper">            
+    <header class="header page-content">            
         <a href="#" class="header__logo" title="Bike Shop Logo"><img src="./images/the_bike_shop_logo.png" alt="logo"></a>
         <nav class="header__menu" id="nav__menu">
             <ul class="header__list">
@@ -34,19 +34,15 @@
         </div>   
     </header> 
     <div class="banner">
-        <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
-            <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-                <i class="fas fa-angle-left fa-5x"></i>
-            </li>
-            <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
-                <i class="fas fa-angle-right fa-5x"></i>          
-            </li>
-        </ul>
-        <ul class="paginations" id="customize-paginations" aria-label="Carousel Pagination">
-            <li data-nav="0" aria-label="Carousel Page 1" aria-controls="tns1" class="" tabindex="-1"></li>
-            <li data-nav="1" aria-label="Carousel Page 2" aria-controls="tns1" class="" tabindex="-1"></li>
-            <li data-nav="2" aria-label="Carousel Page 3" aria-controls="tns1" class="tns-nav-active"></li>
-          </ul>
+        <div class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <button type="button" class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">Previous</button>
+            <button class="next" data-controls="next" aria-controls="customize" tabindex="-1">Next</button>
+        </div>
+        <div class="paginations" id="customize-paginations" aria-label="Carousel Pagination">
+            <button data-nav="0" aria-label="Carousel Page 1" aria-controls="tns1" class="" tabindex="-1"></button>
+            <button data-nav="1" aria-label="Carousel Page 2" aria-controls="tns1" class="" tabindex="-1"></button>
+            <button data-nav="2" aria-label="Carousel Page 3" aria-controls="tns1" class="tns-nav-active"></button>
+        </div>
          <div class="banner__slider">
             <div class="banner__slider__item">
                 <img src="./images/slider_photo01.png" alt="slider1">
@@ -59,20 +55,23 @@
             </div> 
         </div>
         <div class="banner__main-screen">        
-            <div class="banner__main-screen__text">        
-                <div class="banner__main-screen__text__title">
-                    <h1>HANDMADE BICYCLE</h1>
-                </div>
-                <div class="banner__main-screen__text__subtext">
-                    <h6>You <span>create</span> the <span>journey</span>, we supply the <span>parts.</span></h6>
-                </div>
-                <div class="banner__main-screen__text__button">
-                    <button class="slider-button">SHOP BIKES</button>
-                </div>            
+            <div class="banner__main-screen__text">   
+                <p class="banner__main-screen__text__title">HANDMADE BICYCLE</p>
+                <p class="banner__main-screen__text__subtext">You <span>create</span> the <span>journey</span>, we supply the <span>parts.</span></p>
+                <button type="button" class="banner__main-screen__text__button">SHOP BIKES</button>
             </div>
-            <div class="banner__main-screen__icon"><img class="scroll-icon" src="./images/scroll_icon.png" alt="scroll-icon"></div>
+            <div class="banner__main-screen__icon">
+                <img src="./images/scroll_icon.png" alt="scroll-icon">            
+            </div>
         </div>
     </div>
+    
+
+
+
+
+
+
 <script src="./js/tiny-slider.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>

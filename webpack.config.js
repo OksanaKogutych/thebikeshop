@@ -8,11 +8,12 @@ module.exports = {
   entry: "./src/js/index.js",
   output: {
     filename: "js/index.js",
-    path: path.resolve(__dirname, "build")
+    path: path.resolve(__dirname, "build"),
   },
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, use: ["babel-loader"] },
+      
       {
         test: /\.scss$/,
         exclude: /node_modules/,
@@ -24,20 +25,23 @@ module.exports = {
           "sass-loader"
         ]
       }
-    ]
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyPlugin([{ from: "./src/fonts", to: "./fonts" }, { from: "./src/images", to: "./images" }]),
+    new CopyPlugin([
+      { from: "./src/fonts", to: "./fonts" },
+      { from: "./src/images", to: "./images" },
+    ]),
     /*Якщо виникає помилка із копіюванням шрифтів "Error: EPERM: operation not permitted, lstat ...", 
       то тоді просто закрий IDE, відкрий консоль із правами адміністратора і запусти build заново */
     new HtmlWebpackPlugin({
       inject: true /* автоматично в html вставляє лінки на JS і CSS */,
-      template: "src/index.html" /* працювати саме з нашим html файлом */
+      template: "src/index.html" /* працювати саме з нашим html файлом */,
     }),
     new MiniCssExtractPlugin({
       filename:
-        "styles/styles.css" /*це шлях і імя результуючого файла, де в нас буде зберігатись весь наш css*/
-    })
-  ]
+        "styles/styles.css" /*це шлях і імя результуючого файла, де в нас буде зберігатись весь наш css*/,
+    }),
+  ],
 };
