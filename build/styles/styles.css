@@ -316,7 +316,7 @@ template {
 
 .header {
   height: auto;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   left: 0;
   right: 0;
@@ -527,7 +527,8 @@ template {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1; }
+    z-index: -1;
+    width: 100%; }
     .banner__slider__item {
       height: 100%;
       width: 100%; }
@@ -631,4 +632,124 @@ body {
 .page-content {
   max-width: 1600px;
   margin: 0 auto; }
+
+.contact-us {
+  position: relative;
+  height: 634px;
+  width: 100%;
+  overflow: hidden; }
+  .contact-us img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .contact-us .form {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 500px; }
+    .contact-us .form__title, .contact-us .form__subtitle {
+      letter-spacing: 0px;
+      line-height: 16px;
+      color: #000000;
+      font-family: "Roboto";
+      padding-bottom: 10px; }
+    .contact-us .form__title {
+      font-size: 14px;
+      font-weight: 700; }
+    .contact-us .form__subtitle {
+      font-size: 8px;
+      font-weight: 400; }
+    .contact-us .form input,
+    .contact-us .form textarea,
+    .contact-us .form select {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 10px;
+      margin: 10px 0;
+      display: inline-block;
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      box-shadow: 0 0 3px #dcdcdc;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-style: italic;
+      font-family: "Roboto"; }
+    .contact-us .form__fullname {
+      display: flex;
+      flex-direction: column; }
+    .contact-us .form__message {
+      height: 100px;
+      resize: none; }
+    .contact-us .form__submit {
+      background-color: #b7b7b7;
+      font-weight: 700;
+      font-family: "Roboto";
+      color: #fff; }
+    .contact-us .form__p {
+      padding-left: 10px;
+      font-weight: 700;
+      font-family: "Roboto";
+      color: #6f6f6f;
+      text-align: left;
+      margin-bottom: 10px; }
+    .contact-us .form__checkbox {
+      display: block;
+      margin-bottom: 10px;
+      text-align: left;
+      padding-left: 10px; }
+      .contact-us .form__checkbox input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer; }
+      .contact-us .form__checkbox label {
+        position: relative;
+        cursor: pointer;
+        font-weight: 400;
+        font-family: "Roboto";
+        color: #6f6f6f; }
+    .contact-us .form__checkbox label:before {
+      content: "";
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 2px solid #707070;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 8px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 5px;
+      border-radius: 50px; }
+    .contact-us .form__checkbox input:checked + label:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 8px;
+      width: 6px;
+      height: 11px;
+      border: solid #707070;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg); }
+
+@media screen and (min-width: 992px) {
+  .contact-us .form__title {
+    font-size: 28px; }
+  .contact-us .form__subtitle {
+    font-size: 15px; }
+  .contact-us .form__fullname {
+    display: flex;
+    flex-direction: row; }
+  .contact-us .form__name, .contact-us .form__surname {
+    width: 213px; } }
 
