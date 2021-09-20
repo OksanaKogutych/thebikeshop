@@ -44,7 +44,7 @@ body {
     right: 0;
     text-align: center;
     margin-top: 30px;
-    max-width: 500px;
+    max-width: 450px;
 
     &__title,
     &__subtitle {
@@ -82,15 +82,14 @@ body {
       font-family: "Roboto";
     }
 
+    textarea:focus, input:focus {
+      outline: none;
+    }
+
     &__fullname {
       display: flex;
       flex-direction: column;
     }
-
-    // &__name,
-    // &__surname {
-    //   width: 213px;
-    // }
 
     &__message {
       height: 100px;
@@ -111,7 +110,7 @@ body {
       text-align: left;
       margin-bottom: 10px;
     }
-
+    
     &__checkbox {
       display: block;
       margin-bottom: 10px;
@@ -139,7 +138,7 @@ body {
       content: "";
       -webkit-appearance: none;
       background-color: transparent;
-      border: 2px solid #707070;
+      border: 3px solid #707070;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
         inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
       padding: 8px;
@@ -158,10 +157,11 @@ body {
       top: 3px;
       left: 8px;
       width: 6px;
-      height: 11px;
-      border: solid #707070;
+      height: 12px;
+      border: solid #6f6464;
       border-width: 0 2px 2px 0;
       transform: rotate(45deg);
+      
     }
   }
 }
@@ -170,27 +170,26 @@ body {
 
 @media screen and (min-width: 992px) {
   .contact-us {
-
     .form {
       &__title {
         font-size: 28px;
+        padding-bottom: 25px;
       }
-  
+
       &__subtitle {
         font-size: 15px;
+        padding-bottom: 25px;
       }
-  
+
       &__fullname {
-        display: flex;
         flex-direction: row;
-      }
-  
-      &__name,
-      &__surname {
-        width: 213px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+
+        input {
+          width: 214px;
+        }
       }
     }
   }
-
-  }
-  
+}

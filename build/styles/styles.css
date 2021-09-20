@@ -653,7 +653,7 @@ body {
     right: 0;
     text-align: center;
     margin-top: 30px;
-    max-width: 500px; }
+    max-width: 450px; }
     .contact-us .form__title, .contact-us .form__subtitle {
       letter-spacing: 0px;
       line-height: 16px;
@@ -681,6 +681,8 @@ body {
       font-weight: 400;
       font-style: italic;
       font-family: "Roboto"; }
+    .contact-us .form textarea:focus, .contact-us .form input:focus {
+      outline: none; }
     .contact-us .form__fullname {
       display: flex;
       flex-direction: column; }
@@ -721,7 +723,7 @@ body {
       content: "";
       -webkit-appearance: none;
       background-color: transparent;
-      border: 2px solid #707070;
+      border: 3px solid #707070;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
       padding: 8px;
       display: inline-block;
@@ -737,19 +739,22 @@ body {
       top: 3px;
       left: 8px;
       width: 6px;
-      height: 11px;
-      border: solid #707070;
+      height: 12px;
+      border: solid #6f6464;
       border-width: 0 2px 2px 0;
       transform: rotate(45deg); }
 
 @media screen and (min-width: 992px) {
   .contact-us .form__title {
-    font-size: 28px; }
+    font-size: 28px;
+    padding-bottom: 25px; }
   .contact-us .form__subtitle {
-    font-size: 15px; }
+    font-size: 15px;
+    padding-bottom: 25px; }
   .contact-us .form__fullname {
-    display: flex;
-    flex-direction: row; }
-  .contact-us .form__name, .contact-us .form__surname {
-    width: 213px; } }
+    flex-direction: row;
+    padding-bottom: 20px;
+    justify-content: space-between; }
+    .contact-us .form__fullname input {
+      width: 214px; } }
 
