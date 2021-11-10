@@ -521,17 +521,26 @@ template {
   min-height: 100vh;
   width: 100%;
   overflow: hidden; }
-  .banner__slider {
+  .banner .tns-liveregion {
+    display: none; }
+  .banner .tns-outer,
+  .banner .tns-ovh,
+  .banner .tns-inner {
+    height: 100%; }
+  .banner__slider-wrapper {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: -1; }
+  .banner__slider {
+    height: 100%;
     width: 100%; }
     .banner__slider__item {
+      display: inline-block;
       height: 100%;
-      width: 100%; }
+      vertical-align: top; }
       .banner__slider__item img {
         display: block;
         width: 100%;
