@@ -767,3 +767,103 @@ body {
     .contact-us .form__fullname input {
       width: 214px; } }
 
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 32%;
+  padding: 50px 10px 30px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccd0d3;
+  border-radius: 3px;
+  transition: .3s; }
+  .product-item:hover {
+    border-color: #000; }
+  .product-item__rating {
+    position: absolute;
+    top: 15px;
+    right: 10px; }
+    .product-item__rating-wrap {
+      float: left; }
+    .product-item__rating--off {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #ccd0d3; }
+    .product-item__rating--on {
+      position: relative;
+      overflow: hidden;
+      color: #ffcb01; }
+    .product-item__rating-count {
+      position: relative;
+      top: -1px;
+      padding-left: 5px;
+      font-size: 10px; }
+      .product-item__rating-count:before {
+        content: '('; }
+      .product-item__rating-count:after {
+        content: ')'; }
+  .product-item__image {
+    margin-bottom: 20px; }
+    .product-item__image img {
+      display: block;
+      max-width: 80%;
+      margin: auto; }
+  .product-item__name {
+    margin-bottom: 10px;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500; }
+  .product-item__promotion {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px; }
+  .product-item__price {
+    margin-bottom: 25px;
+    font-weight: 600; }
+  .product-item__add-btn {
+    padding: 15px;
+    width: 95%;
+    background-color: #fff;
+    color: #214bff;
+    border: 2px solid #214bff;
+    text-transform: uppercase;
+    font-size: 14px; }
+    .product-item__add-btn:hover {
+      color: #000;
+      border-color: transparent; }
+  .product-item__badge {
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    padding: 3px 5px;
+    background-color: #ff0000;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px; }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+
+td, th {
+  text-align: center;
+  padding: 8px; }
+
+tr:nth-child(even) {
+  background-color: #dddddd; }
+
