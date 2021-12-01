@@ -54,37 +54,44 @@ showMenu('nav__toggle', 'nav__menu');
 
 
 const buttons = document.getElementsByClassName('product-item__add-btn');
-console.log(document.getElementsByClassName('product-item__add-btn'));
+
 
 
 
 for (let button of buttons) {
     button.addEventListener('click', function (e) {
         e.preventDefault;
-        const id = e.target.parentElement.dataset.id;
+        const id = e.target.parentElement.dataset.id;   
+        checkRow (id);
+
         
-        createRow(id);
         rowNumber();
+        deleteRow ()
+        
     }, true);
 }
 
-function rowNumber () {
-    console.log(document.querySelectorAll('tr'));
+function rowNumber() {
+    //console.log(document.querySelectorAll('tr'));
     var str = Array.from(document.querySelectorAll('tr'));
     for (var i = 1; i < str.length; i += 1) {
 
         str[i].children[0].innerHTML = i;
     }
-}  
+}
 
 
 
 function createRow(id) {
 
-   // console.log(id);
+
 
     let tableBody = document.getElementById('tableBody')
+
+
     let newRow = document.createElement("tr");
+    newRow.setAttribute("id", `prod_${id}`);
+
 
     tableBody.appendChild(newRow);
 
@@ -97,8 +104,53 @@ function createRow(id) {
 
     let priceColumn = document.createElement("td");
     priceColumn.appendChild(document.createTextNode(document.querySelector(`[data-id="${id}"] .product-item__price`).innerHTML));
+
+    let quantityColumn = document.createElement("td");
+    quantityColumn.classList.add("one");
+    quantityColumn.innerText = 1;
+
+    let removeColumn = document.createElement("td");
+    let button = document.createElement("button");    
+    button.innerHTML = "REMOVE";
+    button.setAttribute("id", "remove");
+    removeColumn.appendChild(button);
     
+
     newRow.appendChild(numberColumn);
     newRow.appendChild(nameColumn);
     newRow.appendChild(priceColumn);
+    newRow.appendChild(quantityColumn);
+    newRow.appendChild(removeColumn);
+}
+
+function deleteRow (id) {
+    let removeButtons = Array.from(document.querySelectorAll('#remove'));
+
+    removeButtons.forEach(element => {
+        element.addEventListener('click', function (e) {
+            e.target.closest("tr").remove();
+            
+            rowNumber() 
+
+        })
+    });
+    
+
+}
+
+
+function checkRow (id) {
+    let productInfo = document.getElementById(`prod_${id}`);
+    console.log(productInfo);
+    if (productInfo) {
+        let productQuantity = document.querySelector(`#prod_${id} .one`).innerHTML;
+        productQuantity++;
+        document.querySelector(`#prod_${id} .one`).innerHTML = productQuantity;
+        console.log(productQuantity)
+    }
+    else {
+        createRow(id);
+    }
+
+
 }
