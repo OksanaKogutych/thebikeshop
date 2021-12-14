@@ -1,50 +1,63 @@
-import '../styles/styles.scss'
+import '../styles/styles.scss';
+import Banner from './main-slider';
+import Header from './header';
+// import 'regenerator-runtime/runtime';
 
 
-/*==================== SLIDER ====================*/
+/*==================== Banner ====================*/
 
-import { tns } from "../../node_modules/tiny-slider/src/tiny-slider"
+const mainBanner = new Banner();
+mainBanner.init(); 
 
-var slider = tns({
-    container: '.banner__slider',
-    //items: 1,
-    loop: false,
-    controlsContainer: "#customize-controls",
-    //slideBy: 1,
-    nav: true,
-    navContainer: "#customize-paginations",
-    autoplay: true,
-    autoplayButtonOutput: false,
+/*==================== Header ====================*/
 
+const header = new Header (
+    document.querySelector('.header__toggle__burger'),
+    document.querySelector('.header__menu')
+)
+header.init();
+
+//Globals
+
+let comments = [];
+
+const commentsBlock = document.getElementById('comments-block');
+console.log(commentsBlock);
+
+//Attach event
+
+document.addEventListener('DOMContentLoaded', initApp());
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
 });
 
-/*==================== CLOSE BUTTON ====================*/
-
-const menuBtn = document.querySelector('.header__toggle');
-const closeBtn = document.querySelector('.header__toggle__burger');
-menuBtn.addEventListener('click', () => {
-    if (!closeBtn.classList.contains('open')) {
-        closeBtn.classList.add('open');
-
-    } else {
-        closeBtn.classList.remove('open');
-
-    }
-});
-
-/*==================== SHOW MENU ====================*/
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId);
-
-
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show-menu');
-        });
-    }
+function initApp () {
+    Promise.all([getAllComments()]).then(values => {
+        [comments] = values;
+        comments.forEach((comment) => printComment(comment));
+    });
 }
-showMenu('nav__toggle', 'nav__menu');
+
+async function getAllComments () {
+    const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+    const data = await response.json();
+    
+    return data;
+
+}
+
+ function printComment ({name, email, body}) {
+     const div = document.createElement('div');
+     div.className = 'comment-item';
+     const p = document.createElement('p');
+     p.innerHTML = `${name}, ${email}, ${body}`;
+    div.append(p);
+     commentsBlock.append(div)
+
+
+ }
+
+
 
 
 
@@ -53,15 +66,25 @@ showMenu('nav__toggle', 'nav__menu');
 /*NOMEWORK*/
 
 
+
 const buttons = document.getElementsByClassName('product-item__add-btn');
+
+let emptyBody = document.getElementById('tableBody').childElementCount;
+console.log(emptyBody);
+if (emptyBody === 0) {
+    let table = document.querySelector('table');
+    table.style.display = 'none';
+}
 
 
 
 
 for (let button of buttons) {
     button.addEventListener('click', function (e) {
-        e.preventDefault;
+        e.preventDefault;        
         const id = e.target.parentElement.dataset.id;   
+        let table = document.querySelector('table');
+    table.style.display = 'table';
         checkRow (id);
 
         
