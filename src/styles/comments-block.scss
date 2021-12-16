@@ -1,16 +1,26 @@
 .comments {
-    width: 100%;
-    height: 345px;
+    width: auto;
+    height: auto;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 15px;
+    
     
     &__item {
-        background-color: #b7b7b7;
-        width: 300px;
-        height: 100px;
-       
-    }
+        background-color: #6f6f6f;
+        max-width: 450px;
+        margin-bottom: 15px;
+    }   
 }
+
+@media screen and (min-width: 992px) {
+    .comments {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;    
+    }
+    }
+

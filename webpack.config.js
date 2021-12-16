@@ -4,6 +4,17 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
+// const copyWebpackPlugin = () => new CopyWebpackPlugin({
+//   patterns: [{
+//       from: './src/fonts',
+//       to: './fonts',
+//   }]
+//   [{
+//     from: './src/images',
+//     to: './images',
+// }]
+// });
+
 module.exports = {
   entry: "./src/js/index.js", 
   output: {
@@ -33,6 +44,10 @@ module.exports = {
       { from: "./src/fonts", to: "./fonts" },
       { from: "./src/images", to: "./images" },
     ]),
+   
+
+
+
     /*Якщо виникає помилка із копіюванням шрифтів "Error: EPERM: operation not permitted, lstat ...", 
       то тоді просто закрий IDE, відкрий консоль із правами адміністратора і запусти build заново */
     new HtmlWebpackPlugin({

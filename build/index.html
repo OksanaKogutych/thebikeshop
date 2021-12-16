@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bike Shop</title>
+<link href="styles/styles.css" rel="stylesheet"></head>
+<body>  
+    <header class="header page-content">            
+        <a href="#" class="header__logo" title="Bike Shop Logo"><img src="./images/the_bike_shop_logo.png" alt="logo"></a>
+        <nav class="header__menu" id="nav__menu">
+            <ul class="header__list">
+                <li class="header__list__item">
+                    <a href="#" title="Bicycles">BICYCLES</a>
+                    <ul class="header__list__dropdown">
+                        <li class="header__list__item"><a href="#" title="Link 1">Link 1</a></li>
+                        <li class="header__list__item"><a href="#" title="Link 2">Link 2</a></li>
+                        <li class="header__list__item"><a href="#" title="Link 3">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="header__list__item"><a href="#" title="Parts">PARTS</a></li>
+                <li class="header__list__item"><a href="#" title="Accessories">ACCESSORIES</a></li>
+                <li class="header__list__item"><a href="#" title="Extras">EXTRAS</a></li>
+                <li><a href="#" title="Basket"><img src="./images/basket_icon.png" alt="basket-icon"></a></li>
+            </ul>
+        </nav>
+        <div class="header__toggle" id="nav__toggle">
+            <div class="header__toggle__burger"></div>
+        </div>   
+    </header> 
+    <div class="banner">
+        <div class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <button type = "button" class="prev">Previous</button>
+            <button type = "button" class="next" >Next</button>
+        </div>
+        <div class="paginations" id="customize-paginations" >
+            <button title="First slide" ></button>
+            <button title="Second slide"></button>
+            <button title="Third slide"></button>
+        </div>
+        <div class="banner__slider-wrapper">
+            <div class="banner__slider">
+                <div class="banner__item">
+                    <img src="./images/slider_photo01.png" alt="slider1">
+                </div>
+                <div class="banner__item">
+                    <img src="./images/slider_photo02.jpg" alt="slider2">
+                </div>
+                <div class="banner__item">
+                    <img src="./images/slider_photo03.jpg" alt="slider3">
+                </div> 
+            </div>
+        </div>
+         
+        <div class="banner__main">        
+            <div class="banner__text">   
+                <p class="banner__title">HANDMADE BICYCLE</p>
+                <p class="banner__subtext">You <span>create</span> the <span>journey</span>, we supply the <span>parts.</span></p>
+                <button type="button" class="banner__button">SHOP BIKES</button>
+            </div>
+            <div class="banner__scroll-icon">
+                <img src="./images/scroll_icon.png" alt="scroll-icon">            
+            </div>
+        </div>
+    </div>
+    <div class="contact-us">
+        <!-- <img src="./images/contact_us_bg.png" alt="contact-us_bg">  -->
+        <form class="contact-us__form page-content" action="#" method="post" >
+            <p class="contact-us__title">CONTACT US</p>
+            <p class="contact-us__subtitle">Please contact us for all inquiries and purchase options.</p>
+            <div class="contact-us__fullname">
+                <input type="text" class="contact-us__name" name = "name" placeholder="NAME"  required>  
+                <input type="text" class="contact-us__surname"  name = "surname" placeholder="SURNAME" required>
+            </div>
+            <input type="email" class="contact-us__email" name = "email" placeholder="USER@DOMAIN.COM">
+            <textarea class="contact-us__message" placeholder="MESSAGE"></textarea>
+            <p class="contact-us__p">TYPES OF BICYCLES:</p>
+            <div class="contact-us__checkbox">
+                <input type="checkbox" id="road-bike" name="bike-type"  value="road-bike">
+                <label for="road-bike">Road Bike</label>
+            </div>
+            <div class="contact-us__checkbox">                
+                <input type="checkbox" id="mountain-bike" name="bike-type" value="mountain-bike">
+                <label for="mountain-bike">Mountain Bike</label>
+            </div>
+            <div class="contact-us__checkbox">
+                <input type="checkbox" id="touring-bike" name="bike-type" value="touring-bike"> 
+                <label for="touring-bike">Touring Bike</label>  
+            </div>       
+            <p class="contact-us__p">MODELS OF BICYCLES:</p>
+            <select name="models">
+                <option value="dorozhnik">Dorozhnik</option> 
+                <option value="discovery">Discovery</option>
+                <option value="formula">Formula</option>
+                <option value="head">Head</option>
+            </select>            
+            <button type="submit" class="contact-us__submit"><span>SEND</span></button>
+        </form>
+    </div>
+    <div class="comments" id="comments-block">
+        <!-- <div class="comments__item"></div>
+        <div class="comments__item"></div>
+        <div class="comments__item"></div> -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <ul class="product-list">
+        <li class="product-item" data-id="1">
+            <div class="product-item__badge">Sale</div>
+            <div class="product-item__rating">
+                <div class="product-item__rating-wrap">
+                    <div class="product-item__rating--off">★★★★★</div>
+                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
+                </div>
+                <span class="product-item__rating-count">22</span>
+            </div>
+            <div class="product-item__image">
+                <img src="img/img1.png" alt="product image">
+            </div>
+            <a href="#" class="product-item__name">Standard Jerry shirt 1</a>
+            <span class="product-item__promotion">Limited-time deal</span>
+            <div class="product-item__price">$14.00</div>
+            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
+            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
+        </li>
+        <li class="product-item" data-id="2">
+            <div class="product-item__badge">Sale</div>
+            <div class="product-item__rating">
+                <div class="product-item__rating-wrap">
+                    <div class="product-item__rating--off">★★★★★</div>
+                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
+                </div>
+                <span class="product-item__rating-count">22</span>
+            </div>
+            <div class="product-item__image">
+                <img src="img/img2.png" alt="product image">
+            </div>
+            <a href="#" class="product-item__name">Standard Jerry shirt 2</a>
+            <span class="product-item__promotion">Limited-time deal</span>
+            <div class="product-item__price">$10.00</div>
+            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
+            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
+        </li>
+        <li class="product-item" data-id="3">
+            <div class="product-item__rating">
+                <div class="product-item__rating-wrap">
+                    <div class="product-item__rating--off">★★★★★</div>
+                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
+                </div>
+                <span class="product-item__rating-count">22</span>
+            </div>
+            <div class="product-item__image">
+                <img src="img/img3.png" alt="product image">
+            </div>
+            <a href="#" class="product-item__name">Standard Jerry shirt 3</a>
+            <span class="product-item__promotion">Limited-time deal</span>
+            <div class="product-item__price">$149.00</div>
+            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
+            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
+        </li>
+        <li class="product-item" data-id="4">
+            <div class="product-item__rating">
+                <div class="product-item__rating-wrap">
+                    <div class="product-item__rating--off">★★★★★</div>
+                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
+                </div>
+                <span class="product-item__rating-count">22</span>
+            </div>
+            <div class="product-item__image">
+                <img src="img/img4.png" alt="product image">
+            </div>
+            <a href="#" class="product-item__name">Standard Jerry shirt 4</a>
+            <span class="product-item__promotion">Limited-time deal</span>
+            <div class="product-item__price">$87.00</div>
+            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
+            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
+        </li>
+        <li class="product-item" data-id="5">
+            <div class="product-item__rating">
+                <div class="product-item__rating-wrap">
+                    <div class="product-item__rating--off">★★★★★</div>
+                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
+                </div>
+                <span class="product-item__rating-count">22</span>
+            </div>
+            <div class="product-item__image">
+                <img src="img/img5.png" alt="product image">
+            </div>
+            <a href="#" class="product-item__name">Standard Jerry shirt 5</a>
+            <span class="product-item__promotion">Limited-time deal</span>
+            <div class="product-item__price">$210.00</div>
+            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
+            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
+        </li>
+        <li class="product-item" data-id="6">
+            <div class="product-item__rating">
+                <div class="product-item__rating-wrap">
+                    <div class="product-item__rating--off">★★★★★</div>
+                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
+                </div>
+                <span class="product-item__rating-count">22</span>
+            </div>
+            <div class="product-item__image">
+                <img src="img/img6.png" alt="product image">
+            </div>
+            <a href="#" class="product-item__name">Standard Jerry shirt 6</a>
+            <span class="product-item__promotion">Limited-time deal</span>
+            <div class="product-item__price">$1400.00</div>
+            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
+            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
+        </li>
+    </ul>
+    <table>
+        <thead id = tableHead>
+            <tr>
+                <th>N#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Remove item</th>
+            </tr>
+        </thead>
+        <tbody id = tableBody>        
+        </tbody>         
+    </table> -->
+
+
+
+
+
+
+<script src="./js/tiny-slider.js"></script>
+<script type="text/javascript" src="js/index.js"></script></body>
+</html>
