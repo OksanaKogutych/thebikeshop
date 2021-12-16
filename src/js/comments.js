@@ -9,7 +9,7 @@ export default class Comments {
             .then(response => { return response.json() })
             .then(data => {
                 data.forEach(element => {
-                    if (element.id <= 4) {
+                    if (element.id <= 3) {
                         return this.printComment(element);
                     }
 
