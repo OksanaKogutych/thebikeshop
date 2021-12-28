@@ -3,6 +3,7 @@ import Banner from './main-slider';
 import Slider from './product-slider';
 import Header from './header';
 import Comments from './comments';
+import Products from './products';
 // import 'regenerator-runtime/runtime';
 
 
@@ -80,6 +81,13 @@ let tab = function () {
 
 
 tab();
+
+// const productsBlock = new Products ('.products__tabs-links', '.products__list');
+// productsBlock.init();
+
+
+
+/*==================== Products slider ====================*/
 
 
 const kidsBike = new Banner({
