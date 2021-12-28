@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bike Shop</title>
 <link href="styles/styles.css" rel="stylesheet"></head>
-<body>  
-    <header class="header page-content">            
-        <a href="#" class="header__logo" title="Bike Shop Logo"><img src="./images/the_bike_shop_logo.png" alt="logo"></a>
+
+<body>
+    <header class="header page-content">
+        <a href="#" class="header__logo" title="Bike Shop Logo"><img src="./images/the_bike_shop_logo.png"
+                alt="logo"></a>
         <nav class="header__menu" id="nav__menu">
             <ul class="header__list">
                 <li class="header__list__item">
@@ -27,20 +30,20 @@
         </nav>
         <div class="header__toggle" id="nav__toggle">
             <div class="header__toggle__burger"></div>
-        </div>   
-    </header> 
+        </div>
+    </header>
     <div class="banner">
         <div class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
-            <button type = "button" class="prev">Previous</button>
-            <button type = "button" class="next" >Next</button>
+            <button type="button" class="prev">Previous</button>
+            <button type="button" class="next">Next</button>
         </div>
-        <div class="paginations" id="customize-paginations" >
-            <button title="First slide" ></button>
+        <div class="paginations" id="customize-paginations">
+            <button title="First slide"></button>
             <button title="Second slide"></button>
             <button title="Third slide"></button>
         </div>
         <div class="banner__slider-wrapper">
-            <div class="banner__slider">
+            <div class="banner__slider" id="banner-slider">
                 <div class="banner__item">
                     <img src="./images/slider_photo01.png" alt="slider1">
                 </div>
@@ -49,60 +52,328 @@
                 </div>
                 <div class="banner__item">
                     <img src="./images/slider_photo03.jpg" alt="slider3">
-                </div> 
+                </div>
             </div>
         </div>
-         
-        <div class="banner__main">        
-            <div class="banner__text">   
+
+        <div class="banner__main">
+            <div class="banner__text">
                 <p class="banner__title">HANDMADE BICYCLE</p>
-                <p class="banner__subtext">You <span>create</span> the <span>journey</span>, we supply the <span>parts.</span></p>
+                <p class="banner__subtext">You <span>create</span> the <span>journey</span>, we supply the
+                    <span>parts.</span></p>
                 <button type="button" class="banner__button">SHOP BIKES</button>
             </div>
             <div class="banner__scroll-icon">
-                <img src="./images/scroll_icon.png" alt="scroll-icon">            
+                <img src="./images/scroll_icon.png" alt="scroll-icon">
             </div>
         </div>
     </div>
     <div class="contact-us">
-        <!-- <img src="./images/contact_us_bg.png" alt="contact-us_bg">  -->
-        <form class="contact-us__form page-content" action="#" method="post" >
+        <form class="contact-us__form page-content" action="#" method="post">
             <p class="contact-us__title">CONTACT US</p>
             <p class="contact-us__subtitle">Please contact us for all inquiries and purchase options.</p>
             <div class="contact-us__fullname">
-                <input type="text" class="contact-us__name" name = "name" placeholder="NAME"  required>  
-                <input type="text" class="contact-us__surname"  name = "surname" placeholder="SURNAME" required>
+                <input type="text" class="contact-us__name" name="name" placeholder="NAME" required>
+                <input type="text" class="contact-us__surname" name="surname" placeholder="SURNAME" required>
             </div>
-            <input type="email" class="contact-us__email" name = "email" placeholder="USER@DOMAIN.COM">
+            <input type="email" class="contact-us__email" name="email" placeholder="USER@DOMAIN.COM">
             <textarea class="contact-us__message" placeholder="MESSAGE"></textarea>
             <p class="contact-us__p">TYPES OF BICYCLES:</p>
             <div class="contact-us__checkbox">
-                <input type="checkbox" id="road-bike" name="bike-type"  value="road-bike">
+                <input type="checkbox" id="road-bike" name="bike-type" value="road-bike">
                 <label for="road-bike">Road Bike</label>
             </div>
-            <div class="contact-us__checkbox">                
+            <div class="contact-us__checkbox">
                 <input type="checkbox" id="mountain-bike" name="bike-type" value="mountain-bike">
                 <label for="mountain-bike">Mountain Bike</label>
             </div>
             <div class="contact-us__checkbox">
-                <input type="checkbox" id="touring-bike" name="bike-type" value="touring-bike"> 
-                <label for="touring-bike">Touring Bike</label>  
-            </div>       
+                <input type="checkbox" id="touring-bike" name="bike-type" value="touring-bike">
+                <label for="touring-bike">Touring Bike</label>
+            </div>
             <p class="contact-us__p">MODELS OF BICYCLES:</p>
             <select name="models">
-                <option value="dorozhnik">Dorozhnik</option> 
+                <option value="dorozhnik">Dorozhnik</option>
                 <option value="discovery">Discovery</option>
                 <option value="formula">Formula</option>
                 <option value="head">Head</option>
-            </select>            
+            </select>
             <button type="submit" class="contact-us__submit"><span>SEND</span></button>
         </form>
     </div>
     <div class="comments" id="comments-block">
-        <!-- <div class="comments__item"></div>
-        <div class="comments__item"></div>
-        <div class="comments__item"></div> -->
     </div>
+    <div class="products">
+        <div class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <button type="button" class="prev">Previous</button>
+            <button type="button" class="next">Next</button>
+        </div>
+        <h2 class="products__title page-content">Best bikes for everyone</h2>
+        <div class="products__tabs page-content">
+            <button class="products__tabs-links is-active" data-tab-name="tab-1" >Kids bikes</button>
+            <button class="products__tabs-links" data-tab-name="tab-2" >Sport bikes</button>
+            <button class="products__tabs-links" data-tab-name="tab-3">New bikes</button>
+        </div>
+        <div class="products__list page-content tab-1 is-active" id="kids-bikes">
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_2.jpg" alt="bike_2">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Favorite Tracker 17" class="pc-card__title">Bike Titan 26 Favorite Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>            
+            <div class="pc-card">
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_2.jpg" alt="bike_2">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Favorite Tracker 17" class="pc-card__title">Bike Titan 26 Favorite Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_2.jpg" alt="bike_2">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Favorite Tracker 17" class="pc-card__title">Bike Titan 26 Favorite Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card">
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_2.jpg" alt="bike_2">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Favorite Tracker 17" class="pc-card__title">Bike Titan 26 Favorite Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card">
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_2.jpg" alt="bike_2">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Favorite Tracker 17" class="pc-card__title">Bike Titan 26 Favorite Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card">
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_2.jpg" alt="bike_2">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Favorite Tracker 17" class="pc-card__title">Bike Titan 26 Favorite Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="products__list page-content tab-2" id="sport-bikes">
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_2.jpg" alt="bike_2">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Sport Tracker 17" class="pc-card__title">Bike Titan 26 Sport Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_3.jpg" alt="bike_3">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Sport Tracker 17" class="pc-card__title">Bike Titan 26 Sport Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_2" class="pc-card__img-link">
+                        <img  src="./images/bike_3.jpg" alt="bike_3">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Sport Tracker 17" class="pc-card__title">Bike Titan 26 Sport Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_3" class="pc-card__img-link">
+                        <img  src="./images/bike_3.jpg" alt="bike_3">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 Sport Tracker 17" class="pc-card__title">Bike Titan 26 Sport Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="products__list page-content tab-3" id="new-bikes">
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_3" class="pc-card__img-link">
+                        <img  src="./images/bike_3.jpg" alt="bike_3">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 New Tracker 17" class="pc-card__title">Bike Titan 26 New Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_3" class="pc-card__img-link">
+                        <img  src="./images/bike_3.jpg" alt="bike_3">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 New Tracker 17" class="pc-card__title">Bike Titan 26 New Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>  
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_3" class="pc-card__img-link">
+                        <img  src="./images/bike_3.jpg" alt="bike_3">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 New Tracker 17" class="pc-card__title">Bike Titan 26 New Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>
+            <div class="pc-card" >
+                <div class="pc-card__img">
+                    <a href="#" title="bike_3" class="pc-card__img-link">
+                        <img  src="./images/bike_3.jpg" alt="bike_3">                        
+                    </a>
+                </div>
+                <div class="pc-card__content">
+                    <a href="#" title="Bike Titan 26 New Tracker 17" class="pc-card__title">Bike Titan 26 New Tracker 17</a>
+                </div>
+                <div class="pc-card__buy-box page-content">
+
+                    <div class="pc-card__price">
+                        <span class="sum">2 899  ₴</span>
+                    </div>
+                    <button class="pc-card__buy-button">Buy</button>
+
+                </div>
+            </div>          
+        </div>
+    </div>
+    
 
 
 
@@ -241,6 +512,7 @@
 
 
 
-<script src="./js/tiny-slider.js"></script>
+    <script src="./js/tiny-slider.js"></script>
 <script type="text/javascript" src="js/index.js"></script></body>
+
 </html>

@@ -70,6 +70,7 @@
     border: none;
     position: relative;
     cursor: pointer;
+    z-index: 3;
 
     &__burger {
       width: 20px;
