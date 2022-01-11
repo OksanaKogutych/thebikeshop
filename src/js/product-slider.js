@@ -24,7 +24,5 @@ export default class Slider {
             
         })
     }
-    // constructor (settings){
-    //     this.slider = tns(settings).play();
-    // }
+   
 }

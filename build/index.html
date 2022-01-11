@@ -103,16 +103,16 @@
     </div>
     <div class="comments" id="comments-block">
     </div>
-    <div class="products">
-        <div class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
-            <button type="button" class="prev">Previous</button>
-            <button type="button" class="next">Next</button>
-        </div>
+    <div class="products">        
         <h2 class="products__title page-content">Best bikes for everyone</h2>
         <div class="products__tabs page-content">
             <button class="products__tabs-links is-active" data-tab-name="tab-1" >Kids bikes</button>
             <button class="products__tabs-links" data-tab-name="tab-2" >Sport bikes</button>
             <button class="products__tabs-links" data-tab-name="tab-3">New bikes</button>
+        </div>
+        <div class="controls" id="products-customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <button type="button" class="prev">Previous</button>
+            <button type="button" class="next">Next</button>
         </div>
         <div class="products__list page-content tab-1 is-active" id="kids-bikes">
             <div class="pc-card" >
@@ -373,6 +373,18 @@
             </div>          
         </div>
     </div>
+    <div class="modal">
+        <div class="modal__box">
+            <h3 class="title">Modal window</h3>
+        <div class="text">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quo minus ipsam soluta temporibus eum aut nobis, quam officiis delectus vero 
+               laboriosam officia accusamus id, vel nisi consequatur, alias odit ab!
+            </p>
+        </div>
+        </div>        
+    </div>
     
 
 
@@ -387,126 +399,7 @@
 
 
 
-    <!-- <ul class="product-list">
-        <li class="product-item" data-id="1">
-            <div class="product-item__badge">Sale</div>
-            <div class="product-item__rating">
-                <div class="product-item__rating-wrap">
-                    <div class="product-item__rating--off">★★★★★</div>
-                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
-                </div>
-                <span class="product-item__rating-count">22</span>
-            </div>
-            <div class="product-item__image">
-                <img src="img/img1.png" alt="product image">
-            </div>
-            <a href="#" class="product-item__name">Standard Jerry shirt 1</a>
-            <span class="product-item__promotion">Limited-time deal</span>
-            <div class="product-item__price">$14.00</div>
-            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
-            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
-        </li>
-        <li class="product-item" data-id="2">
-            <div class="product-item__badge">Sale</div>
-            <div class="product-item__rating">
-                <div class="product-item__rating-wrap">
-                    <div class="product-item__rating--off">★★★★★</div>
-                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
-                </div>
-                <span class="product-item__rating-count">22</span>
-            </div>
-            <div class="product-item__image">
-                <img src="img/img2.png" alt="product image">
-            </div>
-            <a href="#" class="product-item__name">Standard Jerry shirt 2</a>
-            <span class="product-item__promotion">Limited-time deal</span>
-            <div class="product-item__price">$10.00</div>
-            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
-            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
-        </li>
-        <li class="product-item" data-id="3">
-            <div class="product-item__rating">
-                <div class="product-item__rating-wrap">
-                    <div class="product-item__rating--off">★★★★★</div>
-                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
-                </div>
-                <span class="product-item__rating-count">22</span>
-            </div>
-            <div class="product-item__image">
-                <img src="img/img3.png" alt="product image">
-            </div>
-            <a href="#" class="product-item__name">Standard Jerry shirt 3</a>
-            <span class="product-item__promotion">Limited-time deal</span>
-            <div class="product-item__price">$149.00</div>
-            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
-            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
-        </li>
-        <li class="product-item" data-id="4">
-            <div class="product-item__rating">
-                <div class="product-item__rating-wrap">
-                    <div class="product-item__rating--off">★★★★★</div>
-                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
-                </div>
-                <span class="product-item__rating-count">22</span>
-            </div>
-            <div class="product-item__image">
-                <img src="img/img4.png" alt="product image">
-            </div>
-            <a href="#" class="product-item__name">Standard Jerry shirt 4</a>
-            <span class="product-item__promotion">Limited-time deal</span>
-            <div class="product-item__price">$87.00</div>
-            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
-            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
-        </li>
-        <li class="product-item" data-id="5">
-            <div class="product-item__rating">
-                <div class="product-item__rating-wrap">
-                    <div class="product-item__rating--off">★★★★★</div>
-                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
-                </div>
-                <span class="product-item__rating-count">22</span>
-            </div>
-            <div class="product-item__image">
-                <img src="img/img5.png" alt="product image">
-            </div>
-            <a href="#" class="product-item__name">Standard Jerry shirt 5</a>
-            <span class="product-item__promotion">Limited-time deal</span>
-            <div class="product-item__price">$210.00</div>
-            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
-            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
-        </li>
-        <li class="product-item" data-id="6">
-            <div class="product-item__rating">
-                <div class="product-item__rating-wrap">
-                    <div class="product-item__rating--off">★★★★★</div>
-                    <div class="product-item__rating--on" style="width: 85%">★★★★★</div>
-                </div>
-                <span class="product-item__rating-count">22</span>
-            </div>
-            <div class="product-item__image">
-                <img src="img/img6.png" alt="product image">
-            </div>
-            <a href="#" class="product-item__name">Standard Jerry shirt 6</a>
-            <span class="product-item__promotion">Limited-time deal</span>
-            <div class="product-item__price">$1400.00</div>
-            <button type="button" class="primary-btn product-item__add-btn">Add to cart</button>
-            <button type="button" class="primary-btn product-item__add-wish-list">Add to wish list</button>
-        </li>
-    </ul>
-    <table>
-        <thead id = tableHead>
-            <tr>
-                <th>N#</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Remove item</th>
-            </tr>
-        </thead>
-        <tbody id = tableBody>        
-        </tbody>         
-    </table> -->
-
+   
 
 
 

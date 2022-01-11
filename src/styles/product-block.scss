@@ -9,6 +9,7 @@
       .tns-inner {
         height: 100%;
       }
+      
     .prev,
     .next {
         position: absolute;
@@ -56,6 +57,7 @@
     
 
     &__title {
+        font-size: 14px;
         padding: 15px;
         text-align: center;
         font-family: "Roboto", sans-serif;
@@ -91,9 +93,8 @@
     }
 
     &__list {
-        
+        transform: none !important;        
         width: 100%;
-        
         justify-content: space-evenly;
         flex-wrap: wrap;
         display: none;
@@ -171,52 +172,14 @@
 
 
 @media screen and (min-width: 992px) {
-    // .products {
+    .products {
 
-    //     &__title {
-    //     }
+        &__title {
+            font-size: 28px;
+        }
+       
+    }
     
-    //     &__list {
-    //     }
-    // }
-    // .pc-card {
-    
-    //     &__img {
-    //     }
-    
-    //     &__img-link {
-    //     }
-    
-    //     &__picture {
-    //     }
-    
-    //     &__content {
-    //     }
-    
-    //     &__title {
-    //     }
-    
-    //     &__action {
-    //     }
-    
-    //     &__rewiev-box {
-    //     }
-    
-    //     &__compare {
-    //     }
-    
-    //     &__favorite {
-    //     }
-    
-    //     &__buy-box {
-    //     }
-    
-    //     &__price {
-    //     }
-    
-    //     &__buy-button {
-    //     }
-    // }
 
 
     
